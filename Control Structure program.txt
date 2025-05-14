@@ -1,0 +1,1426 @@
+﻿Control Structure program..
+
+
+1. Number Checking and Basic Conditions.
+1. Find whether a number is even or odd.
+Solution:
+import java.util.Scanner;
+public class Prog51 {
+   public static void main(String args[])
+   {
+      int n;
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter the value of n:");
+      n=sc.nextInt();
+      if(n%2==0)
+      {
+       System.out.println(n+"is Even number");
+      }
+      else
+      System.out.println(n+ "Is Odd");
+   }
+}
+
+
+
+
+2. Check whether a number is divisible by 17.
+Solution:
+import java.util.Scanner;
+public class prog52 {
+   public static void main(String args[])
+   {
+       int n;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the value of n");
+       n=sc.nextInt();
+       if(n%17==0)
+       {
+           System.out.println(n+ " The number is divisible by 17" );
+       }
+       else
+       System.out.println(n +" is not divisible by 17");
+   }
+  
+}
+
+
+
+
+3. Find whether a year is a leap year.
+Solution:
+import java.util.Scanner;
+public class Leapyear {
+   public static void main(String args[])
+   {
+       int n;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the year:");
+       n=sc.nextInt();
+       if((n%4==0 && n%100 !=0) || n%400==0)
+       {
+           System.out.println("The given year is leap year.");
+       }
+       else
+       System.out.println("The given year is not a leap year.");
+   }
+  
+}
+
+
+
+
+4. Check whether a number is divisible by 5 and 7.
+Solution:
+import java.util.Scanner;
+public class Divi {
+   public static void main(String args[])
+   {
+       int n;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter n");
+       n=sc.nextInt();
+       if(n%5==0 && n%7==0)
+       {
+           System.out.println("The number "+n+"is divisible by 5 or 7.");
+       }
+       else
+       System.out.println("The number "+n+"is not divisible by 5 or 7.");
+      
+   }
+}
+
+
+
+
+5. Check whether a number is divisible by 5 or 7.
+Solution:
+public class Q5 {
+   public static void main(String args[])
+   {
+       int n;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the number:");
+       n=sc.nextInt();
+       if(n%5==0)
+       {
+           System.out.println("The number is divisible by 5.");
+       }
+       else if(n%7==0)
+       {
+           System.out.println("The number is divisible by 7.");
+       }
+       else
+       System.out.println("The number is not divisible by 5 and 7 both .");
+   }
+  
+}
+
+
+6. Find the maximum of two numbers.
+Solution:
+import java.util.Scanner;
+public class max {
+   public static  void main(String args[])
+   {
+       int a,b;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the value of a and b:");
+       a=sc.nextInt();
+       b=sc.nextInt();
+       if(a>b)
+       {
+         System.out.println(a + "is greater than"+b);
+       }
+        else if(b>a)
+        {
+           System.out.println(b +" Is greater than"+a);
+        }
+        else
+        System.out.println("The"+a +"and"+b+"is Equal.");
+       };
+   }
+
+
+7. Find the minimum of two numbers.
+Solution:
+import java.util.Scanner;
+public class Q7 {
+   public static void main(String args[])
+   {
+       int a,b;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the value of a and b");
+       a=sc.nextInt();
+       b=sc.nextInt();
+       if(a>b)
+       {
+           System.out.println(b+"is less  than"+a);
+       }
+       else if(a<b)
+       {
+           System.out.println(a +"is less than "+b);
+       }
+       else
+       System.out.println(a+"and "+b+"is equal.");
+   }
+}
+
+
+8. Check whether a number is positive or negative.
+Solution:
+ import java.util.Scanner;
+ public class Q8{
+       public static void main(String[] args) {
+           Scanner scanner = new Scanner(System.in);
+           System.out.print("Enter a number: ");
+           double number = scanner.nextDouble();
+           if (number > 0) {
+               System.out.println("The number is positive.");
+           } else if (number < 0) {
+               System.out.println("The number is negative.");
+           } else {
+               System.out.println("The number is zero.");
+           }
+  
+           scanner.close();
+       }
+   }
+
+
+9. Check whether the first number is between the second and third.
+Solution:
+import java.util.Scanner;
+public class Q9 {
+   public static void main(String args[])
+   {
+       int a,b,c;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the value of a ,b and c");
+       a=sc.nextInt();
+       b=sc.nextInt();
+       c=sc.nextInt();
+       if((a>b && a<c) || (a>c && a<b))
+       {
+         System.out.println(a+"is in between "+b+"and"+c);
+       }
+       else
+       System.out.println(a+"is not in between "+b+"and"+c);
+   }
+}
+
+
+10. Check whether the third number is between the first and second.
+Solution:
+import java.util.Scanner;
+public class Inbet3{
+       public static void main(String args[])
+       {
+           int a,b,c;
+           Scanner sc=new Scanner(System.in);
+           System.out.println("Enter the value of a ,b and c");
+           a=sc.nextInt();
+           b=sc.nextInt();
+           c=sc.nextInt();
+           if((c>a && c<b)||(c>b && c<a))
+       {
+           System.out.println(c+" is in between "+a+" and "+b);
+       }
+       else
+       System.out.println("The "+c+ " is not in between "+a+" and "+b);
+   }
+}
+
+
+11. Check whether the second number is between the first and third.
+Solution:
+import java.util.Scanner;
+public class InBet {
+   public static void main(String args[])
+   {
+       int a,b,c;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the value of a ,b and c");
+       a=sc.nextInt();
+       b=sc.nextInt();
+       c=sc.nextInt();
+      if((b>a && b<c)||(b<a && b>c))
+       {
+           System.out.println(b+" is in between "+a+" and "+b);
+       }
+       else
+       System.out.println("The "+b+ " is not in between "+a+" and "+c);
+   }
+  
+}
+
+
+
+
+3. Conditional and Logical Operations
+17. Accept age and check whether a person is eligible for voting.
+Solution:
+import java.util.Scanner;
+public class Q17 {
+   public static void main(String args[])
+   {
+       int age;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter your age.");
+       age=sc.nextInt();
+       if (age>=18)
+       {
+        System.out.println("You are Eligible for voting.") ; 
+        System.out.println("Please vote..!!!!");
+       }
+       else
+       System.out.println("Sorry for now you are not eligible for voting....");
+   }
+}
+
+
+18. Accept ATM pin number (1234) and check whether it is valid or not.
+Solution:
+import java.util.Scanner;
+public class Q18 {
+   public static void main(String args[])
+   {
+       int pin;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter your pin code.");
+       pin=sc.nextInt();
+       if(pin ==1234)
+       {
+           System.out.println("OKK...You enter a correct pin code..");
+       }
+       else
+       System.out.println("Ohhh...You Enter a wrong pin code..");
+       System.out.println("Please Enter a correct pin code...!!!");
+
+
+   }
+}
+19. Accept number of vaccines taken, if 2 vaccines then print eligible for interview.
+Solution:
+import java.util.Scanner;
+public class Q19 {
+   public static void main(String args[])
+   {
+       int vaccines=2;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("How many vaccines do you take..");
+       int n=sc.nextInt();
+       if(n<vaccines)
+       {
+           System.out.println("Ohhh you don't have vaccinated with sufficient dose..");
+           System.out.println("You are not eligible for interview..");
+       }
+       else
+       System.out.println("Sure..you are eligible for interview..");
+       System.out.println("Best of luck for interview..");
+   }
+  
+}
+
+
+20. Accept ATM balance and withdrawal amount, then check sufficient balance and display the 
+remaining balance.
+Solution:
+import java.util.Scanner;
+public class Q20 {
+   public static void main(String args[])
+   {
+       double withdrwalamt;
+       double balance;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the Withdrawal amount:");
+       withdrwalamt=sc.nextDouble();
+       System.out.println("Enter the total balance:");
+       balance=sc.nextDouble();
+       if(withdrwalamt <= balance)
+       {
+           balance=balance-withdrwalamt;
+           System.out.println("Successful to withdrawal...");
+           System.out.println("Remaining balance is:"+balance);
+       }
+       else{
+           System.out.println("Insufficient balance withdrawal failed.");
+       }
+   }
+  
+}
+
+
+
+
+21. Check whether a number is 1-digit, 2-digit, 3-digit, 4-digit, or above.
+Solution:
+ import java.util.Scanner;
+public class Q21 {
+       public static void main(String[] args) {
+           Scanner scanner = new Scanner(System.in);
+           System.out.print("Enter a number: ");
+           int number = scanner.nextInt();
+           if (number >= 0 && number <= 9) {
+               System.out.println("It is a 1-digit number.");
+           } else if (number >= 10 && number <= 99) {
+               System.out.println("It is a 2-digit number.");
+           } else if (number >= 100 && number <= 999) {
+               System.out.println("It is a 3-digit number.");
+           } else if (number >= 1000 && number <= 9999) {
+               System.out.println("It is a 4-digit number.");
+           } else {
+               System.out.println("It is more than 4 digits.");
+           }
+  
+           scanner.close();
+       }
+   }
+
+
+22. Read three sides (a, b, c) of a triangle and print its type.
+Solution:
+import java.util.Scanner;
+public class Q22 {
+       public static void main(String[] args) {
+           Scanner scanner = new Scanner(System.in);
+           System.out.print("Enter side a: ");
+           int a = scanner.nextInt();
+           System.out.print("Enter side b: ");
+           int b = scanner.nextInt();
+           System.out.print("Enter side c: ");
+           int c = scanner.nextInt();
+           if (a + b > c && b + c > a && c + a > b) {
+               if (a == b && b == c) {
+                   System.out.println("Equilateral triangle");
+               } else if ((a * a + b * b == c * c) ||
+                          (b * b + c * c == a * a) ||
+                          (c * c + a * a == b * b)) {
+                   System.out.println("Right-angled triangle");
+               } else if (a == b || b == c || c == a) {
+                   System.out.println("Isosceles triangle");
+               } else {
+                   System.out.println("Scalene triangle");
+               }
+           } else {
+               System.out.println("Not a valid triangle");
+           }
+  
+           scanner.close();
+       }
+   }
+
+
+23. Accept two points (x, y) and determine which quadrant they belong to.
+solution:
+import java.util.Scanner;
+public class Q23 {
+   public static void main(String args[])
+   {
+       int x,y;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the value of x and y");
+       x=sc.nextInt();
+       y=sc.nextInt();
+       if((x>0)&&(y>0))
+       {
+           System.out.println( x+"and "+y+ "is in first Quadrant.");
+       }
+       else if((x<0)&&(y>0))
+       {
+           System.out.println(x +"and "+y +"is in the second quadrant.");
+       }
+       else if((x<0)&&(y<0))
+       {
+           System.out.println(x +"and "+y +"is in the Third quadrant.");
+       }
+       else if((x>0)&&(y<0))
+       {
+           System.out.println(x +"and "+y +"is in the four quadrant.");
+       }
+       else if((x>0)&&(y>=0))
+       {
+           System.out.println(x +"and"+y+"is in the first Quadrant axis.");
+       }
+       else if((x<0)&&(y>=0))
+       {
+           System.out.println(x +"and"+y+"is in the second Quadrant axis.");
+       }
+       else if((x>=0)&&(y>=0))
+       {
+           System.out.println(x +"and"+y+"is in on origin.");
+       }
+   }
+}
+
+
+
+
+2. Financial Calculations
+12. Accept cost price and selling price, then find profit/loss in percentage/amount.
+Solution:
+import java.util.Scanner;
+public class Q12 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the cost price.");
+       double CostPrice=sc.nextDouble();
+       System.out.println("Enter Selling price.");
+       double SellingPrice=sc.nextDouble();
+       double profitorLoss=SellingPrice-CostPrice;
+
+
+       if(profitorLoss >0)
+       {
+           System.out.println("profit:"+profitorLoss+"Rs.");
+           System.out.println("profit%:"+(profitorLoss/CostPrice)*100);
+
+
+       }else{
+           System.out.println("Loss:"+(-profitorLoss)+"Rs.");
+           System.out.println("Loss%"+(-profitorLoss/CostPrice)*100);
+       }
+   }
+}
+
+
+13. Accept amount and apply discount based on the amount range.
+Solution:
+import java.util.Scanner;
+public class Q13 {
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       System.out.print("Enter the purchase amount: ");
+       double amount = scanner.nextDouble();
+       double discount = 0.0;
+       double finalAmount;
+       if (amount >= 1000) {
+           discount = 0.20;
+       } else if (amount >= 500) {
+           discount = 0.15;
+       } else if (amount >= 100) {
+           discount = 0.10;
+       } else {
+           discount = 0.0;
+       }
+       double discountAmount = amount * discount;
+       finalAmount = amount - discountAmount;
+       System.out.println("Original Amount: $" + amount);
+       System.out.println("Discount Applied: " + (discount * 100) + "%");
+       System.out.println("Discount Amount: $" + discountAmount);
+       System.out.println("Final Amount to Pay: $" + finalAmount);
+
+
+       scanner.close();
+   }
+}
+
+
+
+
+14. Accept basic salary and calculate tax based on given tax brackets.
+solution:
+import java.util.Scanner;
+public class Q14 {
+
+
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       System.out.print("Enter your basic salary: ");
+       double salary = scanner.nextDouble();
+       double taxRate = 0.0;
+       if (salary <= 250000) {
+           taxRate = 0.0;
+       } else if (salary <= 500000) {
+           taxRate = 0.05;
+       } else if (salary <= 1000000) {
+           taxRate = 0.10;
+       } else {
+           taxRate = 0.20;
+       }
+       double taxAmount = salary * taxRate;
+       System.out.println("Basic Salary: â‚¹" + salary);
+       System.out.println("Applicable Tax Rate: " + (taxRate * 100) + "%");
+       System.out.println("Tax Amount: â‚¹" + taxAmount);
+
+
+       scanner.close();
+   }
+}
+
+
+15.write a java program Accept monthly sales income and calculate commission.
+Solution:
+import java.util.Scanner;
+public class Q15 {
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       System.out.print("Enter your monthly sales income: â‚¹");
+       double sales = scanner.nextDouble();
+       double commissionRate = 0.0;
+       if (sales <= 10000) {
+           commissionRate = 0.0;
+       } else if (sales <= 50000) {
+           commissionRate = 0.05;
+       } else if (sales <= 100000) {
+           commissionRate = 0.10;
+       } else {
+           commissionRate = 0.15;
+       }
+       double commission = sales * commissionRate;
+       System.out.println("Monthly Sales: â‚¹" + sales);
+       System.out.println("Commission Rate: " + (commissionRate * 100) + "%");
+       System.out.println("Commission Earned: â‚¹" + commission);
+
+
+       scanner.close();
+   }
+}
+
+
+
+
+16. Accept loan amount and calculate interest and EMI.
+Solution:
+import java.util.Scanner;
+public class Q16 {
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       System.out.print("Enter loan amount (Principal): â‚¹");
+       double principal = scanner.nextDouble();
+
+
+       System.out.print("Enter annual interest rate (in %): ");
+       double annualRate = scanner.nextDouble();
+
+
+       System.out.print("Enter loan tenure (in years): ");
+       int tenureYears = scanner.nextInt();
+       double monthlyRate = annualRate / 12 / 100;
+       int tenureMonths = tenureYears * 12;
+       double emi = (principal * monthlyRate * Math.pow(1 + monthlyRate, tenureMonths))
+                  / (Math.pow(1 + monthlyRate, tenureMonths) - 1);
+       double totalPayment = emi * tenureMonths;
+       double totalInterest = totalPayment - principal;
+       System.out.printf("Monthly EMI: â‚¹%.2f%n", emi);
+       System.out.printf("Total Interest: â‚¹%.2f%n", totalInterest);
+       System.out.printf("Total Payment (Principal + Interest): â‚¹%.2f%n", totalPayment);
+
+
+       scanner.close();
+   }
+}
+
+
+
+
+Q.24) Find the maximum of three numbers using nested if-else.
+Solution:
+import java.util.Scanner;
+public class Prog1 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+
+
+       System.out.println("Enter a:");
+       int a=sc.nextInt();
+
+
+       System.out.println("Enter b:");
+       int b=sc.nextInt();
+
+
+       System.out.println("Enter C");
+       int c=sc.nextInt();
+       System.out.println("a:"+a);
+       System.out.println("b:"+b);
+       System.out.println("c:"+c);
+
+
+       if(a>b)
+       {
+              if(a>c)
+              {
+                 System.out.println(a+"is max");
+              }else{
+               System.out.println("c is max");
+              }
+       }else{
+           if(b>c){
+               System.out.println("b is max");
+           }else{
+               System.out.println("c is max");
+           }
+       }
+       }
+   }
+
+
+
+
+25. Find the minimum of three numbers.
+Solution:
+import java.util.Scanner;
+public class Prog25 {
+  
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+
+
+       System.out.println("Enter a:");
+       int a=sc.nextInt();
+
+
+       System.out.println("Enter b:");
+       int b=sc.nextInt();
+
+
+       System.out.println("Enter C");
+       int c=sc.nextInt();
+       System.out.println("a:"+a);
+       System.out.println("b:"+b);
+       System.out.println("c:"+c);
+
+
+       if(a>b)
+       {
+              if(a<c)
+              {
+                 System.out.println(a+"is min");
+              }else{
+               System.out.println("c is min");
+              }
+       }else{
+           if(b<c){
+               System.out.println("b is min");
+           }else{
+               System.out.println("c is min");
+           }
+       }
+       }
+   }
+
+
+26. Find the maximum of four numbers.
+Solution:
+import java.util.Scanner;
+public class Prog26 {
+       public static void main(String[] args) {
+           Scanner scanner = new Scanner(System.in);
+  
+           // Input four numbers
+           System.out.print("Enter first number: ");
+           int a = scanner.nextInt();
+  
+           System.out.print("Enter second number: ");
+           int b = scanner.nextInt();
+  
+           System.out.print("Enter third number: ");
+           int c = scanner.nextInt();
+  
+           System.out.print("Enter fourth number: ");
+           int d = scanner.nextInt();
+  
+           int max;
+           if (a > b) {
+               if (a > c) {
+                   if (a > d) {
+                       max = a;
+                   } else {
+                       max = d;
+                   }
+               } else {
+                   if (c > d) {
+                       max = c;
+                   } else {
+                       max = d;
+                   }
+               }
+           } else {
+               if (b > c) {
+                   if (b > d) {
+                       max = b;
+                   } else {
+                       max = d;
+                   }
+               } else {
+                   if (c > d) {
+                       max = c;
+                   } else {
+                       max = d;
+                   }
+               }
+           }
+           System.out.println("The maximum number is: " + max);
+          
+           scanner.close();
+       }
+   }
+
+
+27. Find the maximum of two numbers using the ternary operator
+Solution:
+import java.util.Scanner;
+public class prog27 {
+   public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.print("Enter a:");
+      int a=sc.nextInt();
+      System.out.print("Enter b:");
+      int b=sc.nextInt();
+      int max=(a>b)?a:b;
+      System.out.println("Max Element is "+max);
+   }
+  
+}
+
+
+28. Find the maximum of three numbers using the ternary operator.
+Solution:
+import java.util.Scanner;
+public class Prog28 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter a:");
+       int a=sc.nextInt();
+       System.out.print("Enter B:");
+       int b=sc.nextInt();
+       System.out.print("Enter c:");
+       int c=sc.nextInt();
+
+
+       int max=(a>b)? (a>c)?a:c:(b>c)? b:c;
+       System.out.println("Max element is "+max);
+   }
+  
+}
+
+
+29. Find the minimum of four numbers using nested if-else.
+Solution:
+import java.util.Scanner;
+public class Prog29 {
+  
+       public static void main(String[] args) {
+           Scanner scanner = new Scanner(System.in);
+  
+           // Input four numbers
+           System.out.print("Enter first number: ");
+           int a = scanner.nextInt();
+  
+           System.out.print("Enter second number: ");
+           int b = scanner.nextInt();
+  
+           System.out.print("Enter third number: ");
+           int c = scanner.nextInt();
+  
+           System.out.print("Enter fourth number: ");
+           int d = scanner.nextInt();
+  
+           int min;
+           if (a < b) {
+               if (a < c) {
+                   if (a < d) {
+                       min = a;
+                   } else {
+                       min = d;
+                   }
+               } else {
+                   if (c < d) {
+                       min= c;
+                   } else {
+                       min = d;
+                   }
+               }
+           } else {
+               if (b < c) {
+                   if (b <d) {
+                       min = b;
+                   } else {
+                       min = d;
+                   }
+               } else {
+                   if (c < d) {
+                       min = c;
+                   } else {
+                       min = d;
+                   }
+               }
+           }
+           System.out.println("The minimum number is: " + min);
+          
+           scanner.close();
+       }
+   }
+
+
+
+
+5. Education & Exam Eligibility:
+30. Accept three subject marks from the user and display total, percentage, and class.
+Solution:
+import java.util.Scanner;
+public class Prog32 {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter marks of python:");
+        double python=sc.nextDouble();
+        System.out.print("Enter marks of Java:");
+        double java=sc.nextDouble();
+        System.out.print("Enter marks of DSA:");
+        double DSA=sc.nextDouble();
+        
+        if(python >=40 && java >=40 && DSA >=40){
+            double total=python+java+DSA;
+            double per=(total/3);
+            System.out.println(per+"%");
+            if(per >90 && per <=100)
+            {
+                System.out.println("Distinction class");
+            }else if(per >80 && per <=90)
+            {
+                System.out.println("First class");
+            }else if(per >70 && per <=80)
+            {
+                System.out.println("Second class");
+            }else if(per >40 && per <=70)
+            {
+                System.out.println("pass class");
+            }
+        }else {
+            System.out.println("Sorry! You are get failed..");
+        }
+    }
+    
+}
+
+
+32. Accept marks in three subjects, if marks in each subject ≥ 40, then display class, else print 
+fail/ATKT.
+Solution:
+import java.util.Scanner;
+public class Prog32 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter marks of python:");
+       double python=sc.nextDouble();
+       System.out.print("Enter marks of Java:");
+       double java=sc.nextDouble();
+       System.out.print("Enter marks of DSA:");
+       double DSA=sc.nextDouble();
+      
+       if(python >=40 && java >=40 && DSA >=40){
+           double total=python+java+DSA;
+           double per=(total/3);
+           System.out.println(per+"%");
+           if(per >90 && per <=100)
+           {
+               System.out.println("Distinction class");
+           }else if(per >80 && per <=90)
+           {
+               System.out.println("First class");
+           }else if(per >70 && per <=80)
+           {
+               System.out.println("Second class");
+           }else if(per >40 && per <=70)
+           {
+               System.out.println("pass class");
+           }
+       }else {
+           System.out.println("Sorry! You are get failed..");
+       }
+   }
+  
+}
+
+
+33. Check whether a character is a vowel.
+import java.util.Scanner;
+public class Prog33 {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your Character:");
+        char ch=sc.next().toLowerCase().charAt(0);
+
+
+        if(ch=='a' ||ch=='e' ||ch=='i' ||ch=='o' ||ch=='u')
+        {
+          System.out.println("It is Vowel.");
+        }else {
+            System.out.println("It is not a vowel.");
+        }
+    }
+    
+}
+
+
+34. Check whether a character is an alphabet or not.
+35. Check whether a character is uppercase, lowercase, or something else.
+36. Check whether a character is a digit or not.
+37. Check whether a character is a special character.
+Solution:
+import java.util.Scanner;
+public class Prog35 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter your Character:");
+       char ch=sc.next().charAt(0);
+
+
+       if(Character.isUpperCase(ch))
+       {
+       System.out.println(ch+"is upper.");
+       }else if(Character.isLowerCase(ch))
+       {
+           System.out.println(ch+"is lower");
+       }else if(Character.isDigit(ch)){
+           System.out.println(ch+"is digit");
+       }
+       else{
+           System.out.println(ch+"is Special Character.");
+       }
+   }
+}
+
+
+
+
+
+
+42. Accept product category and apply a discount based on category:
+o Electronics → 10% discount
+o Clothing → 15% discount, 20% if amount > ₹5000
+o Food → No discount, but 5% if amount > ₹1000
+Solution:
+import java.util.Scanner;
+public class Prog42 {
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+
+
+      
+       System.out.print("Enter product category (Electronics, Clothing, Food): ");
+       String category = scanner.nextLine().trim().toLowerCase();
+
+
+       System.out.print("Enter purchase amount (in â‚¹): ");
+       double amount = scanner.nextDouble();
+
+
+       double discount = 0;
+
+
+       // Apply discount based on category
+       if (category.equals("electronics")) {
+           discount = 0.10 * amount;
+       } else if (category.equals("clothing")) {
+           if (amount > 5000) {
+               discount = 0.20 * amount;
+           } else {
+               discount = 0.15 * amount;
+           }
+       } else if (category.equals("food")) {
+           if (amount > 1000) {
+               discount = 0.05 * amount;
+           }
+       } else {
+           System.out.println("Invalid category entered.");
+           scanner.close();
+           return;
+       }
+       double finalAmount = amount - discount;
+
+
+       System.out.println("Original Amount: " + amount);
+       System.out.println("Discount Applied: " + discount);
+       System.out.println("Final Amount to Pay: " + finalAmount);
+
+
+       scanner.close();
+   }
+}
+
+
+
+
+
+
+Loop-based Questions
+1. Print numbers from 1 to 1000.
+Solution:
+
+
+import java.util.Scanner;
+public class Prog1 {
+   public static void main(String args[])
+{
+   int i=1;
+   while(i<=1000)
+   {
+       System.out.println("i "+i);
+       i++;
+   }
+}
+}
+
+
+2. Print numbers from 1 to user-specified number n.
+Solution:
+import java.util.Scanner;
+public class Prog2 {
+   public static void main(String args[])
+{
+   Scanner sc=new Scanner(System.in);
+   System.out.println("Enter Your Number:");
+   int n=sc.nextInt();
+
+
+   int i=1;
+   while(i<=n)
+   {
+       System.out.println("i "+i);
+       i++;
+   }
+}
+}
+
+
+3. Print numbers from 100 to 5000, incrementing by 50.
+Solution:
+import java.util.Scanner;
+public class Prog3 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter your start:");
+       int i=sc.nextInt();
+       System.out.println("Enter your end:");
+       int n=sc.nextInt();
+
+
+       while(i<=n)
+       {
+           System.out.println("i :"+i);
+           i+=50;
+       }
+   }
+  
+}
+
+
+4. Print numbers from 100 to 1 in descending order.
+Solution:
+import java.util.Scanner;
+public class Prog4 {
+       public static void main(String args[])
+       {
+           Scanner sc=new Scanner(System.in);
+           System.out.println("Enter your start:");
+           int i=sc.nextInt();
+           System.out.println("Enter your end:");
+           int n=sc.nextInt();
+  
+           while(i >= n)
+           {
+               System.out.println("i :"+i);
+               i--;
+           }
+       }
+      
+   }
+
+
+5. Print numbers from 1000 to 100, decrementing by 80.
+Solution:
+import java.util.Scanner;
+public class Prog5 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter your start:");
+       int i=sc.nextInt();
+       System.out.println("Enter your end:");
+       int n=sc.nextInt();
+
+
+       while(i>=n)
+       {
+           System.out.println("i :"+i);
+           i-=80;
+       }
+   }
+  
+}
+
+
+Number Sequence & Summation
+6. Print first n even numbers.
+Solution:
+
+
+import java.util.Scanner;
+public class Prog6 {
+       public static void main(String args[])
+       {
+           Scanner sc=new Scanner(System.in);
+           System.out.println("Enter your start:");
+           int i=sc.nextInt();
+           System.out.println("Enter your end:");
+           int n=sc.nextInt();
+  
+           while(i <= n)
+           {
+               if(i%2==0){
+                   System.out.println("i :"+i);
+               }
+            i++;
+           }
+      
+   }
+}
+
+
+7. Print first n odd numbers.
+Solution:
+import java.util.Scanner;
+public class Prog7 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+           System.out.println("Enter your start:");
+           int i=sc.nextInt();
+           System.out.println("Enter your end:");
+           int n=sc.nextInt();
+  
+           while(i <= n)
+           {
+               if(i%2 !=0){
+                   System.out.println("i :"+i);
+               }
+            i++;
+           }
+      
+   }
+  
+}
+
+
+
+
+8. Print "Welcome" message n times.
+Solution:
+import java.util.Scanner;
+public class Prog8 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       int i=1;
+       System.out.println("Enter number do you want print message:");
+       int n=sc.nextInt();
+
+
+       while(i<=n)
+       {
+           System.out.println("Welcome");
+           i++;
+       }
+   }
+  
+}
+
+
+9. Accept a number n from the user and display the sum of numbers up to n.
+Solution:
+import java.util.Scanner;
+public class Prog9 {
+       public static void main(String args[])
+       {
+           Scanner sc=new Scanner(System.in);
+           System.out.println("Enter your start:");
+           int i=sc.nextInt();
+           System.out.println("Enter your end:");
+           int n=sc.nextInt();
+           int sum=0;
+
+
+           while(i <= n)
+           {
+               sum +=i;
+                i++;
+           }
+       System.out.println("sum :"+sum);
+   }
+}
+
+
+
+
+10. Accept a number n from the user and display the sum of even numbers up to n.
+Solution:
+import java.util.Scanner;
+public class Prog10 {
+       public static void main(String args[])
+       {
+           Scanner sc=new Scanner(System.in);
+          
+           System.out.println("Enter a number:");
+           int n=sc.nextInt();
+           int sum=0;
+           int i=2;
+           while(i <= n)
+           {
+               if(i<=n){
+                sum +=i;
+                i+=2;
+               
+           }
+          
+       }
+       System.out.println("Sum of even number up to "+n+"is:"+sum);
+}
+}
+
+
+11. Accept a number n from the user and display the sum of odd numbers up to n.
+Solution:
+import java.util.Scanner;
+public class Prog11 {
+  
+   public static void main(String args[])
+       {
+           Scanner sc=new Scanner(System.in);
+          
+           System.out.println("Enter a number:");
+           int n=sc.nextInt();
+           int sum=0;
+           int i=1;
+           while(i <= n)
+           {
+               if(i<=n){
+                sum +=i;
+                i+=1;
+               
+           }
+          
+       }
+       System.out.println("Sum of odd number up to "+n+"is:"+sum);
+}
+}
+
+
+12. Accept two numbers n and mmm from the user and print the sum of numbers between n
+and m.
+Solution:
+import java.util.Scanner;
+
+
+public class Prog12 {
+    public static void main(String args[])
+       {
+           Scanner sc=new Scanner(System.in);
+           System.out.println("Enter your start:");
+           int i=sc.nextInt();
+           System.out.println("Enter your end:");
+           int n=sc.nextInt();
+           int sum=0;
+
+
+           while(i <= n)
+           {
+               sum +=i;
+                i++;
+           }
+       System.out.println("sum :"+sum);
+   }
+}
+
+
+Multiplication & Power Calculation
+13. Print the multiplication table of a number using the * operator.
+Solution:
+import java.util.Scanner;
+public class Prog13 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       int i=1;
+       System.out.println("Enter your number:");
+       int n=sc.nextInt();
+
+
+       while(i<=10){
+           System.out.println(i*n);
+           i++;
+       }
+   }
+  
+}
+
+
+
+
+15. Calculate the factorial of a given number n.
+Solution:
+import java.util.Scanner;
+public class Prog15 {
+
+
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+      
+       System.out.println("Enter your number:");
+       int n=sc.nextInt();
+       int i=n;
+
+
+       int fact=1;
+
+
+       while(i>=1){
+           fact *=i;
+           i--;
+       }
+         System.out.println("Factorial of "+n +" is "+fact);  
+   }
+}
+
+
+Character-based Problems
+17. Accept a character and a range n, then display the next n characters.
+
+
+import java.util.Scanner;
+public class Prog17 {
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+
+
+       System.out.println("Enter your number:");
+       int n=sc.nextInt();
+
+
+       System.out.println("Enter your Character");
+       char ch=sc.next().charAt(0);
+
+
+       int start=(int)ch;
+       int end=start +n;
+
+
+       while(start <=end){
+           System.out.println((char)start);
+           start++;
+       }
+   }
+}
